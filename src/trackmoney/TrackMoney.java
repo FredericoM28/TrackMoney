@@ -14,7 +14,7 @@ public class TrackMoney {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        System.out.println("TrackMoney - Gerenciador de Finanças Pessoais do [Frederico.dev]");
     }
     
 }
