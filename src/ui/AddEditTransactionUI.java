@@ -60,7 +60,7 @@ public class AddEditTransactionUI extends JDialog {
         
         // Categoria
         gbc.gridx=0; gbc.gridy=y; add(new JLabel("Categoria:"), gbc);
-        cmbCategoria = new JComboBox<>(new String[]{"jackpot", "sms", "mb", "transferencia", "pagamento", "outro"});
+        cmbCategoria = new JComboBox<>(new String[]{"jackpot", "sms", "mb", "transferencia", "pagamento", "outro", "credito"});
         gbc.gridx=1; add(cmbCategoria, gbc);
         y++;
         
@@ -97,7 +97,7 @@ public class AddEditTransactionUI extends JDialog {
             
             if (contacto.isEmpty()) contacto = null;
             else if (!MznumberValidator.isValidMozNumber(contacto)) {
-                JOptionPane.showMessageDialog(this, "Número moçambicano inválido (9 dígitos, 82/83/84/85/86)");
+                JOptionPane.showMessageDialog(this, "Número moçambicano inválido (9 dígitos, 82/83/84/85/86/87)");
                 return;
             }
             
